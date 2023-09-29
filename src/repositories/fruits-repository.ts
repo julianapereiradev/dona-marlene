@@ -7,6 +7,8 @@ export type Fruit = {
   price: number
 }
 
+export type CreateFruit = Omit<Fruit, "id">;
+
 function getFruits() {
   return fruits;
 }
